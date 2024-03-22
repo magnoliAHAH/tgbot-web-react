@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './App.css';
 
-const tg = window.Telegram.WebApp;
+
 
 function App() {
 
@@ -9,14 +9,14 @@ function App() {
     tg.ready();
   }, [])
   
-  const onClose = () => {
-    tg.close()
-  }
+
 
   return (
-    <div className="App">
-      work
-      <button onClick={onClose}>закрыть</button>
+    <div className="App"> 
+      <div>
+        <img src='./public/logo192.png'></img>
+      </div>
+ 
     </div>
   );
 }
